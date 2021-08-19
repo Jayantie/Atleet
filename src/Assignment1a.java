@@ -26,14 +26,20 @@ public class Assignment1a {
 		int random_day = 01;
 		
 		// list array om alle waarden op te slaan
-		Atleet [] atleten = new Atleet[50];  
+		Atleet [] atleten = new Atleet[50]; 
+		
+		//String[] atleten1 = new String[50];	 // Dit geeft me errors. Waarom mag ik dit niet gebruiken?
+		//ArrayList<String> atleten2 = new ArrayList<String>();//Dit gaf me ook een error
+		//ArrayList<Object> atleten3 = new ArrayList<Object>();//Gelezen op Google dat dit kon helpen. Maar kreeg hiermee ook errors
+		
 		for(int i=0 ; i < atleten.length ; i++) {
 			random_sport_index = random.nextInt(6);
 		    random_jaar  = random.nextInt(2005-1990) + 1990;
 			random_month = random.nextInt(11) +1;
 			random_day   = random.nextInt(28) +1;
 			atleten[i]  = new Atleet("Jair", "Tjon en Fa"+i, Sport.values()[random_sport_index], LocalDate.of(random_jaar,random_month, random_day));
-			
+			//atleten3.add(new Atleet("Jair", "Tjon en Fa"+i, Sport.values()[random_sport_index], LocalDate.of(random_jaar,random_month, random_day));
+
 		}
 		 
 		
