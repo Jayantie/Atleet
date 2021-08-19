@@ -26,10 +26,7 @@ public class Assignment1a {
 		int random_day = 01;
 		
 		// list array om alle waarden op te slaan
-		Atleet [] atleten = new Atleet[50];  //Dit begrijp ik niet. Atleet is een class aangemaakt 
-											 //door U. Class Atleet retourneert geen array object
-											 // Hoe kan ik dan een instance van Atleet gebruiken om en array?
-
+		Atleet [] atleten = new Atleet[50];  
 		for(int i=0 ; i < atleten.length ; i++) {
 			random_sport_index = random.nextInt(6);
 		    random_jaar  = random.nextInt(2005-1990) + 1990;
